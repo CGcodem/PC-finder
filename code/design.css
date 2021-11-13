@@ -1,5 +1,75 @@
-h1 {
+.home-title {
 
-color: brown;
+color: #ff0000;
+font-size: 200px;
+position:fixed;
+bottom: 700px;
+
+
+}
+.find-your-pc{
+
+color: white;
+
+
+}
+.logo {
+
+    font-family: 'Anton', sans-serif;
+
+}
+h1 {
+font-size: 100px;
+font-family: 'Anton', sans-serif;
+text-align: center;
+
+text-decoration: none;
+
+}
+#p {
+
+text-align: center;
+font-size: 50;
+text-decoration: none;
+
+}
+h2 {
+
+font-size: 50;
+text-align: center;
+text-decoration: none;
+
+
+}
+.paragraph {
+
+font-size: 30px;
+text-align: center;
+font-family: 'Nunito', sans-serif;
+line-height: 50px;
+margin-top: 30px;
+}
+
+.menu-button {
+
+position: fixed;
+
+margin-right: 100px;
+bottom: 670px;
+right: 10px;
+
+
+}
+#gaming-pc{
+
+margin-top:100px;
+
+}
+#gaming-pc-intro {
+
+margin-top: 150px;
+color: white;
+
+
 
 }
