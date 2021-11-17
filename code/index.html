@@ -15,7 +15,10 @@
 
 </head>
 
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark" id="menu">
+
+
+<body class="bg-dark text-light">
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark" id="menu">
     <div class="container-fluid">
       <a class="navbar-brand logo" href="#">PC FINDER  <img src="icon.png" alt="" width="60" height="60"> </a>
        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -52,73 +55,69 @@
     </div>
   </nav>
 
-<body class="bg-dark text-light">
-  <div class="menu-button"><a  href="#menu" style="text-decoration: none;">   <button type="button" class="btn btn-outline-primary" >menu</button></a></div>
  
 
 
- <h1> choose your pc <br></h1>
- <div  id="gaming-pc"></div>
- <h2 id="gaming-pc-intro"  > select one of the options </h2>
- <div class="container-fluid">
-   <div class="row">
-     <div class="col bg-light"><div> 
-       <a  href="gaming-pc.html"><button type="button" class="gaming-button" >
-   
+  <h1> choose your pc <br></h1>
+  <h2 id="gaming-pc-intro"  >
+    select one of the options
+  </h2>
+  
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col bg-light">
+        <div>
+          <button class="gaming-button">
+            <a href="gaming-pc.html">
+              <div class="text-button"> Gaming pc </div>
+            </a>
+          </button>
+        </div>
+        
+        <p class="information">- good for gaming <br>- a lot of memory <br>- very fast</p>
+      </div>
 
+      <div class="col bg-light">
+        <div>
+          <button class="gaming-button">
+            <a href="normal-pc.html">
+              <div class="text-button"> Working pc </div>
+            </a>
+          </button>
+        </div>
+        
+        <p class="information">- good for working <br>- cheap <br>- a lot of memory</p>
+      </div>
 
-      <div class="text-button"> Gaming pc </div>
+      <div class="col bg-light">
+        <div>
+          <button class="gaming-button">
+            <a href="laptop.html">
+              <div class="text-button"> laptop </div>
+            </a>
+          </button>
+        </div>
+        
+        <p class="information">- you can bring it everywhere <br>- fast processor <br>- cheap</p>
+      </div>
+    
 
-      
-    
-    
-     
-    </a> </button></div>
-    <p class="information">- good for gaming <br>- a lot of memory <br>- very fast</p>
-    
+    </div>
   </div>
-    
 
- <div class="col bg-light" > 
- 
-  <div> <a  href="normal-pc.html"><button type="button" class="gaming-button" >
-   
-
-
-    <div class="text-button"> Working pc </div>
-  
-  
-   
-  </a> </button>
-  <p class="information">- good for working <br>- cheap <br>- a lot of memory</p>
-</div>
-
- </div>
-     <div class="col bg-light">
-      <div> <a  href="laptop.html"><button type="button" class="gaming-button" >
-   
-
-
-        <div class="text-button"> laptop </ion-icon></div>
-      
-      
-       
-      </a> </button></div>
-      <p class="information">- you can bring it everywhere <br>- fast processor <br>- very fast</p>
-    
-
-      
-     </div>
-</div>
- </div>
  <h1> <br> why you should buy a pc <br></h1>
+ 
+ 
  <div class="container" >
-<div class="row">
-<div class="col bg-light" class="buy-a-pc">
-<div class="information text"> hello</div>
+  <div class="row">
+    <div class="col bg-light" >
+      <div class=" text"> A pc is one of the best way to do many things, for examlple you can find a new job or you can study intresting topic without going to a library. Thanks to a pc you can do every thing you want, for example: building your own company, creating videogames or web page, chat on social media and finding work.</div>
+    </div>
 
-</div>
-<div class="col" class="buy-a-pc"></div>
+    <div class="col" >
+      <img src="orionpcp.jpg" alt="">
+
+  </div>
 
 </div>
 
@@ -144,13 +143,14 @@ border: none;
   border-color: green;
   font: inherit;
   line-height: 1;
-margin-left: 90px;
+
   border-radius: 3px;
-  width: 290px;
+  width: 100%;
   height: 70px;
   text-decoration: none;
 
 }
+
 
 .text-button {
 
@@ -159,9 +159,9 @@ font-family: 'Rubik', sans-serif;
 font-size: 30px;
 text-decoration: none;
 text-align: center;
-width: 270px;
-height: 200px;
 margin-top: 16px;
+width: 100%;
+height: 100%;
 
 
 
@@ -185,17 +185,31 @@ margin-right: 23px;
 margin-top: 30px;
 font-family: 'Nunito', sans-serif;
 color: black;
+line-height: 40px;
 
 }
 .col {
 margin-top: 50px;
 height: 500px;
 
+
+
+
 }
 .text {
 
 color: black;
 font-family: 'Nunito', sans-serif;
+font-size: large;
+line-height: 40px;
+margin-top: 70px;
+margin-left: 20px;
+margin-right: 20px ;
+
+
+
+
+
 
 }
 a {
