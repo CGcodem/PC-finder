@@ -85,3 +85,23 @@ opacity: 1px;
 
 
 } 
+.back-button{
+
+background-color: white;
+border-radius: 4px;
+text-decoration: none;
+width: 10%;
+height: 30%;
+text-align: center;
+margin-left: 50px;
+margin-right: 50px;
+color: black;
+
+}
+.back-button:hover {
+
+background-color: black;
+color: white;
+
+}
+
