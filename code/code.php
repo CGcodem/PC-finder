@@ -1,27 +1,26 @@
 <?php
-ini_set('display_errors', 1);
-ini_set('display_startup_errors', 1);
-error_reporting(E_ALL);
-/*
-Tested working with PHP5.4 and above (including PHP 7 )
-
- */
-require_once './vendor/autoload.php';
-
-use FormGuide\Handlx\FormHandler;
+  $name = $_POST ['name'];
+  $visitor_email = $_POST ['email'];
+  $message = $_POST ['message'];
 
 
-$pp = new FormHandler();
+  $email_from = 'carlogiorgio1000@gmail.com';
 
-$validator = $pp->getValidator();
-$validator->fields(['name','email'])->areRequired()->maxLength(50);
-$validator->field('email')->isEmail();
-$validator->field('message')->maxLength(6000);
+  $email_subject = "New Form Submission";
 
+  $email_body = "User Name: $name.\n".
+                 "User Email: $visitor_email.\n".
+                   "User Message: $message.\n";
 
+  $to = "carlo.giorgio@student.h-is.com";
 
+  $headers = "From: $email_from \r\n";
 
-$pp->sendEmailTo('carlo.giorgio@student.h-is.com');
-$pp->sendEmailTo('carlogiorgio1000@gmail.com');
+  $headers .= "Reply-to: $visitor_email \r\n";
 
-echo $pp->process($_POST);
+  mail($to,$email_subject,$email_body,$headers);
+
+  header("Location: blabla.html");
+  
+?>
+
